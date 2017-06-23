@@ -1,0 +1,26 @@
+{
+  "name": "similar-web-geo-project",
+  "version": "1.0.0",
+  "description": "Pulls geographical data for websites from Similar Web's API",
+  "main": "sim_web_geo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "geo",
+    "similar",
+    "web",
+    "data"
+  ],
+  "author": "Michael Goss Wilson",
+  "license": "MIT",
+  "devDependencies": {
+    "argv": "0.0.2",
+    "bluebird": "^3.5.0",
+    "fs": "0.0.1-security",
+    "fs-promise": "^2.0.3",
+    "fsp": "^0.1.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
