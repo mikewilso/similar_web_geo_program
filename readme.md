@@ -17,3 +17,7 @@ Input is a csv file of site URLs, output is:
 		-Bounce rate
 		
 		-Rank in that country
+
+Here is an output example:
+
+![Sample](https://github.com/mikewilso/similar_web_geo_program/blob/master/Sample_Data.png "Sample Data")
