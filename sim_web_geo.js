@@ -1,3 +1,5 @@
+"use strict";
+
 var args = process.argv;
 var fsp = require('fs-promise');
 var Promise = require('bluebird');
@@ -6,7 +8,7 @@ var country_code_dictionary = require("./country_codes.js");
 var file_location;
 var SITE_ARRAY;
 var COMPLETE_RESULTS;
-var api_key = "put api key here";
+var api_key = "9fe5698845fb9de22790affb9edd4ef4";
 var RESULTFILENAME = "results.csv";
 
 
@@ -34,9 +36,8 @@ function openFile(){
                 console.log(err);
     			process.exit();
             }
-
-	  	return contents.replace( /\n/g, " " ).split(" ");
 	    }
+	    return contents.replace( /\n/g, " " ).split(" ");
     });
 }
 
@@ -57,6 +58,11 @@ function buildURI(website){
 	}
 	if (monthBefore < 10) {
 		monthBefore = "0" + monthBefore;
+	}
+	monthNow -= 1;
+	if(monthNow < 1){
+		monthNow = 12;
+		yearNow = yearBefore;
 	}
 	if (monthNow < 10) {
 		monthNow = "0" + monthNow;
