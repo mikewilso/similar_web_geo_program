@@ -8,7 +8,7 @@ var country_code_dictionary = require("./country_codes.js");
 var file_location;
 var SITE_ARRAY;
 var COMPLETE_RESULTS;
-var api_key = "9fe5698845fb9de22790affb9edd4ef4";
+var api_key = "API KEY HERE";
 var RESULTFILENAME = "results.csv";
 
 
